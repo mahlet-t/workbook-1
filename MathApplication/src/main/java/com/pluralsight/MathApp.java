@@ -12,7 +12,7 @@ public class MathApp {
         System.out.println("the smallest price is "+smallestPrice);
         // Question 3
         double radius= 7.25;
-        double area =  Math.PI * radius * radius;
+        double area =  Math.PI * Math.pow(radius,2);
         System.out.println("the area is " +Math.round(area));
         // Question 4
         double number=5.0;
