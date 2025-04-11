@@ -14,10 +14,10 @@ public class BasicCalculator {
         System.out.println("S=subtract");
         System.out.println("M= multiply");
         System.out.println("D= divide");
-
-        System.out.println("please select an option: ");
-
-        String choice = input.next();
+        System.out.println("0: exit" );
+while (true) {
+    System.out.println("please select an option: ");
+    String choice = input.next();
         if (choice.equals("M")) {
             double result = num1 * num2;
             System.out.println((int) num1 + " * " + (int) num2 + " = " + (int) result);
@@ -30,9 +30,15 @@ public class BasicCalculator {
         } else if (choice.equals("d")) {
             double result = num1 / num2;
             System.out.println((int) num1 + "/" + (int) num2 + "=" + result);
+        }
+        else if((choice.equals("0"))) {
+            System.out.println("Good bye!");break; }
+        else {
+            System.out.println("your choice is wrong try again "); }
 
-        } else {
-            System.out.println("you chose other operation try again");
+
+
+
 
 
         }
