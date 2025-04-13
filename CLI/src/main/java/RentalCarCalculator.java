@@ -63,7 +63,7 @@ public class RentalCarCalculator {
             System.out.println("Do you want to do another rental");
             String again=input.next();
             if (!again.equalsIgnoreCase("yes")){
-                System.out.println("thank you for using CLI! Good bye!");
+                System.out.println("thank you for using RCC! Good bye!");
                 break;
             }
 
